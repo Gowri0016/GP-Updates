@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="GP Updates logo.jpg">
+<title>Shop On GP  </title>
+</head>
+<style>
+   body
+   {
+    display: flex;
+    margin:0px;
+    margin-top: -15px;
+    margin-left: 0px;
+    background-color: darkslategray;
+   }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    .close button
+{
+    color: white;
+    border: none;
+    background-color: black;
+    text-align: center;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    padding: 5px;
+    position: absolute;
+    top: 8px;
+    right: 10%;
+    z-index: 6;
+}
+
+    .hed
+    {
+      height: 55px;
+      width: 100%;
+      background-color: gray;
+      position: absolute;
+      top: 0px;
+      z-index: 1;
+
+    }
+    .hed img
+    {
+    position: absolute;
+    padding: 0px;
+    top: 5px;
+    left: 5px;
+    width: 180px;
+    }
+
+    .details
+    {
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        animation: fadeIn 1s ease-in-out;
+        animation-duration:1s;
+    }
+    .footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 55px;
+        background: grey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 0;
+    }
+
+        @media screen and (max-width:500px){
+            
+            body{
+                background-color: darkslategray;
+                background-image: none;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+           
+            .hed
+            {
+                height: 65px;
+                width: 100%;
+                background-color: gray;
+                position: absolute;
+                top: 0px;
+                z-index: 1;
+            }
+            .hed img
+            {position: absolute;
+                top: 5px;
+                left: 5px;
+                width: 180px;
+            }
+
+        }
+            
+    </style>
+
+<body>
+
+    <div class="close">
+        <button>close X</button>
+    </div>
+
+    <div class="hed">
+      <img src="GP U.jpg" alt="Logo">
+    </div>
+
+    <div class="details">
+        <h1>Web design Project</h1>
+    </div>
+
+    <div class="footer">
+        <p>© 2023 GP UPDATES. All rights reserved.</p>
+    </div>
+
+</body>
+<script>
+    let close = document.querySelector('.close');
+    close.addEventListener('click', () => {
+        window.location.href = "GP up.html";
+    });
+</script>
+
+</html>

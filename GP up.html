@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="image/png" sizes="16x16" rel="icon" href=".../icons8-cart-dotty-16.png">
+        <link rel="icon" href="GP.jpg">
+        <title>GP UPDATES</title>
+</head>
+<style>
+  *{
+    text-decoration: none;
+    margin-bottom: 0px;
+}
+body
+{
+    width: 100%;
+    margin-top: 0px;
+    margin-left: 0px;    
+    background-image: url( ./Index.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    animation: fadeIn 1s ease-in-out;
+    animation-duration:1s;
+        
+    }
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+100% {
+        opacity: 1;
+    }
+}
+.close button
+{
+    background: none;
+    color: white;
+    border: none;
+    text-align: center;
+    font-size: large;
+    padding: 5px;
+    cursor: pointer;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    right: 5%;
+    z-index: 6;
+}
+.close button:hover
+{
+    background-color: black;
+    color: white;
+}
+.gp
+{
+    background:none;
+    width: 100%;
+    height: 55px;
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+    align-items: center;
+}
+.gp img
+{
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 180px;
+}
+.Project
+{
+    position: absolute;
+    top: 10px;
+    right: 12%;
+    display: inline-block;
+    z-index: 6;
+}
+.Project-button
+{
+    background: none;
+    color: white;
+    width: 100px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.Project-bar
+{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+.Project-bar-item
+{
+    background: none;
+    color: white; 
+    display: block;
+    position: relative;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.Project:hover .Project-bar
+{
+    height: auto;
+    overflow: visible;
+}
+.Project-bar-item:hover
+{
+    background-color: darkgrey;
+}
+.contenetol
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        position: absolute;
+        top: 250px;
+        left: 25%;
+        border: 5px solid white;
+        height: 200px;
+        width: 50%;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+    }
+    .details {
+        display: flex;
+        justify-content: first baseline ;
+        flex-direction: column;
+        color: white;
+    }
+.footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 55px;
+        background: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 6;
+    }
+</style>
+<body>
+
+  <div class="close">
+    <button>close X</button>
+  </div>
+        
+      <div class="gp">
+        <img src="./GP U B.png" alt="logo">
+      </div>
+
+        <div class="Project">
+          <button class="Project-button">Projects</button>
+          <div class="Project-bar">
+            <a href="./Page 1.html" class="Project-bar-item Project-button">WP</a>
+            <a href="./Page 2.html" class="Project-bar-item Project-button">Design</a>
+            <a href="./Page 3.html" class="Project-bar-item Project-button">About Us</a>
+          </div>
+      </div>
+
+      <div class="contenetol">
+
+        <div class="details">
+            <h2>GP Updates...!</h2>
+            <p>GP UPDATES is a website that provides you with the best website for your needs. We are here to provide you with the best website for your needs.We are here to  provide you with the best website for your needs.</p>
+        </div>
+        
+        </div>
+
+      <div class="footer">
+        <p>© 2023 GP UPDATES. All rights reserved.</p>
+      </div>
+
+
+</body>
+<script>
+
+      let close = document.querySelector('.close');
+      close.addEventListener('click', () => {
+        window.location.href = "index.html";
+      });
+
+      
+</script>
+</html>
